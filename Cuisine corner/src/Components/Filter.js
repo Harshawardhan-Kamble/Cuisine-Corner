@@ -5,6 +5,7 @@ const Filter = ({ searchText, setSearchText, handlerOnClick, topRated }) => {
         <input
           className="search-input"
           type="text"
+        
           placeholder="Search for restaurants"
           value={searchText}
           onChange={(e) => {
