@@ -10,16 +10,18 @@ const Header = () => {
   };
   const onlineStatus = useOnlineStatus();
   // Subscribing to store
-  const cartItems=useSelector((store)=>store.cart.items)
-  console.log(cartItems)
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
   return (
     <div className="header ">
       <div className="logo-container">
-         <Link to="/"><img className="logo" src={logo} /></Link>
+        <Link to="/">
+          <img className="logo" src={logo} />
+        </Link>
       </div>
       <div className="nav-items">
         <ul>
-          <li>{onlineStatus ? "😊" : "😢"}</li>
+        
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -29,10 +31,14 @@ const Header = () => {
           <li>
             <Link to="/contactus">Contact us</Link>
           </li>
-         <Link to="/cart"> <li>Cart- {cartItems.length}</li></Link>
+          <li>
+          <Link to="/cart">
+            Cart- {cartItems.length}
+          </Link></li>
           <li>
             <button className="log-btn" onClick={toggleLog}>
               {log}
+              <span>{onlineStatus ? "🟢" : "🚫"}</span>
             </button>
           </li>
         </ul>
