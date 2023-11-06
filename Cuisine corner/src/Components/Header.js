@@ -38,7 +38,7 @@ const Header = () => {
           <li>
             <button className="log-btn" onClick={toggleLog}>
               {log}
-              <span>{onlineStatus ? "🟢" : "🚫"}</span>
+              <span>{onlineStatus ? "🟢" : "🔴"}</span>
             </button>
           </li>
         </ul>
