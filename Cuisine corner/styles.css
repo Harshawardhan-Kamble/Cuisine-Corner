@@ -76,12 +76,16 @@ button > span {
 }
 .search-button {
   position: absolute;
-  right: 0px;
+ 
+  padding: 9px;
+  right: 0;
+  border: 1px;
   height: 35px;
   background-color: #e67e22;
   border-radius: 0 5px 5px 0;
-  padding: 5px;
-  font-size: large;
+  color: #111;
+  font-size: 12px;
+  cursor: pointer;
 }
 .search-input {
   width: 422px;
@@ -100,4 +104,25 @@ button > span {
 }
 .search-input::placeholder{
    
+}
+.filter-btn{
+  border: 1px #ccc solid;
+  border-radius: 10px;
+  background-color: #e6e6e6;
+  padding: 5px;
+  height: 28px;
+
+  margin-top: 4px;
+  color: #111;
+  font-family: PT Sans, Calibri, sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.filter-btn:active,
+.filter-btn:focus {
+    background-color: #e67e22;
+    border: 1px black solid;
+}
+.search-button:hover{
+  background-color: green;
 }
