@@ -36,7 +36,7 @@ a:visited{
   font-size: 22px;
 }
 .nav-items ul li a {
-  color: #444;
+  color: #242424;
   font-family: PT Sans, Calibri, sans-serif;
   font-weight: bold;
 }
@@ -48,7 +48,14 @@ a:visited{
   color: #e67e22;
   transition: all 0.5s;
 }
+.nav-items ul li a:focus {
+  color: #e26200;
+  /* background-color:rgb(32, 182, 32);
+  border-radius: 5px;
+  padding: 5px; */
 
+
+}
 .log-btn {
   padding: 5px;
   padding-right: 8px;
@@ -135,7 +142,7 @@ button > span {
 .res-container{
   display: grid;
   grid-template-columns: repeat(4,260px);
-  gap:30px;
+  gap:40px;
   grid-template-rows:repeat(5,250px);
   justify-content: center;
 
@@ -173,10 +180,7 @@ button > span {
   font-weight: bold;
   border-radius: 6px;
 }
-/* .shimmer-Container {
-  display: flex;
-  flex-wrap: wrap;
-} */
+
 .shimmer-Container{
   margin-top: 200px;
   display: grid;
