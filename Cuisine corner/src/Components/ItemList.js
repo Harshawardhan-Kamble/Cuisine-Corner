@@ -11,30 +11,29 @@ const ItemList = ({ items}) => {
     <div>
       {items.map((item) => (
         <div
-          className="p-2 m-2 border-gray-200 border-b-2 text-left flex justify-between"
+          className="menu-item-container"
           key={item?.card?.info?.id}
         >
-          <div className="w-9/12">
+          <div className="menu-item-card">
             <p>{item?.card?.info?.name}</p>
             <p>
               ₹
               {Math.round(item.card.info.price / 100) ||
                 item.card.info.defaultPrice / 100}
             </p>
-            <p className=" text-gray-400 text-sm mt-2 mb-2">
+            <p>
               {item?.card?.info?.description}
             </p>
           </div>
-              <div className="relative">
-                <button onClick={()=>handleAddItem(item)} className="absolute left-10 top-5 right-50 pl-4 pr-4 my-14 rounded-sm bg-white  shadow-lg  text-green-500 font-semibold w-16">
+              <div className="item-add">
+                <button onClick={()=>handleAddItem(item)} className="item-add-btn">
                   Add
                 </button>
               </div>
           {item?.card?.info?.imageId ? (
-            <div className="w-3/12 p-4">
+            <div className="item-img">
               <img
                 src={CDN_IMAGE + item?.card?.info?.imageId}
-                className="w-full"
               />
             </div>
           ) : null}

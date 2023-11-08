@@ -35,14 +35,14 @@ const RestMenu = () => {
     );
   return (
     <>
-      <div class=" res-menu-container ">
-        <div class="res-menu-section">
+      <div className=" res-menu-container ">
+        <div className="res-menu-section">
           <div>
             <p >{name}</p>
             <p >{cuisines.join(",")}</p>
             <p >{areaName}</p>
             {/* <img
-              class="mt-2"
+              className="mt-2"
               src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_18,h_18/v1648635511/Delivery_fee_new_cjxumu"
             /> */}
             <p >{feeDetails.message}</p>
@@ -64,12 +64,12 @@ const RestMenu = () => {
         ))}
       </ul> */}
           {/* <ul> */}
-          <div class="res-rating">
-            <p class="font-bold text-center text-lg text-green-500">
+          <div className="res-rating">
+            <p >
               &#9733; {avgRating}
             </p>
             <hr></hr>
-            <p class="text-gray-400 font-semibold">{totalRatingsString}</p>
+            <p >{totalRatingsString}</p>
           </div>
         </div>
       </div>
