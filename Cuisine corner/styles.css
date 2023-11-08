@@ -22,6 +22,13 @@ body {
   height: auto;
   padding-left: 8px;
 }
+a:link{
+  text-decoration: none;
+  color:#242424
+}
+a:visited{
+  color:#242424
+}
 .nav-items ul li {
   display: inline-block;
   margin-left: 30px;
@@ -73,10 +80,10 @@ button > span {
 }
 .search {
   position: relative;
+  margin-bottom: 40px;
 }
 .search-button {
   position: absolute;
- 
   padding: 9px;
   right: 0;
   border: 1px;
@@ -102,9 +109,7 @@ button > span {
 .search-input:focus {
   border-color: #e67e22;
 }
-.search-input::placeholder{
-   
-}
+
 .filter-btn{
   border: 1px #ccc solid;
   border-radius: 10px;
@@ -120,9 +125,47 @@ button > span {
 }
 .filter-btn:active,
 .filter-btn:focus {
-    background-color: #e67e22;
+    background-color: rgb(32, 182, 32);
     border: 1px black solid;
 }
-.search-button:hover{
+.search-button:hover,.filter-btn:hover{
+  background-color: rgb(32, 182, 32);;
+}
+/* Rescontainer and rescards */
+.res-container{
+  display: grid;
+  grid-template-columns: repeat(4,260px);
+  gap:30px;
+  grid-template-rows:repeat(5,250px);
+  justify-content: center;
+
+}
+.res-card{
+  box-shadow: 4px 5px 10px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+
+}
+.res-card *{
+  margin-left: 8px;
+  font-family: PT Sans, Calibri, sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.res-logo{
+  width: 225px;
+  border-radius: 5px;
+  margin: 7px;
+}
+.res-card p{
+  margin-bottom: 10px;
+ 
+}
+.res-card span:nth-child(4){
+  color: white;
+  padding: 4px;
   background-color: green;
+  font-weight: bold;
+  border-radius: 6px;
 }
