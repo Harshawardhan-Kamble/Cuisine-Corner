@@ -36,7 +36,7 @@ a:visited{
   font-size: 22px;
 }
 .nav-items ul li a {
-  color: #242424;
+  color: #444;
   font-family: PT Sans, Calibri, sans-serif;
   font-weight: bold;
 }
@@ -196,4 +196,61 @@ button > span {
   border-radius: 10px;
   padding: 10px;
   animation: shimmer 1.5s infinite linear;
+}
+
+/* Res-menu and Category */
+.res-menu-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.res-menu-section{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 640px;
+  font-family: PT Sans, Calibri, sans-serif;
+}
+.res-menu-section p{
+  font-size: 0.875rem;
+  color: #888;
+  line-height: 1.5;
+}
+.res-menu-section p:first-child{
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #333;
+}
+.res-menu-section p:nth-child(4){
+  margin-top: 0.75rem;
+  margin-bottom:0.75rem
+}
+.res-menu-section span{
+  color:#333;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.res-menu-section span:last-child{
+  margin: 1.25rem;
+}
+.res-rating{
+  border: 1px solid rgb(229 231 235);
+  border-width: 2px;
+  border-radius: .5rem;
+  height: 3.6rem;
+  margin-bottom: 1.5rem;
+}
+.res-rating p:first-child{
+  color: rgb(32, 182, 32);
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+hr{
+  color:#ccc
 }

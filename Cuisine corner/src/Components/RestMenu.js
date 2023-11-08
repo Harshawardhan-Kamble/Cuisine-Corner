@@ -35,21 +35,21 @@ const RestMenu = () => {
     );
   return (
     <>
-      <div className=" flex justify-center items-center ">
-        <div className="w-full flex justify-between max-w-screen-sm my-8">
+      <div class=" res-menu-container ">
+        <div class="res-menu-section">
           <div>
-            <p className="font-bold my-6 text-lg  text-lightBlack">{name}</p>
-            <p className=" text-sm text-gray-500">{cuisines.join(",")}</p>
-            <p className=" text-sm  text-gray-500">{areaName}</p>
+            <p >{name}</p>
+            <p >{cuisines.join(",")}</p>
+            <p >{areaName}</p>
             {/* <img
-              className="mt-2"
+              class="mt-2"
               src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_18,h_18/v1648635511/Delivery_fee_new_cjxumu"
             /> */}
-            <p className="text-sm  text-gray-500 my-3">{feeDetails.message}</p>
-            <span className="font-bold  text-md  text-gray-700">
+            <p >{feeDetails.message}</p>
+            <span >
               {sla.deliveryTime}MINS
             </span>
-            <span className="font-bold  text-md  text-gray-700 m-5">
+            <span>
               {costForTwoMessage}
             </span>
           </div>
@@ -64,12 +64,12 @@ const RestMenu = () => {
         ))}
       </ul> */}
           {/* <ul> */}
-          <div className="border-2 border-gray-200 h-16 my-6 rounded-lg">
-            <p className="font-bold text-center text-lg text-green-500">
+          <div class="res-rating">
+            <p class="font-bold text-center text-lg text-green-500">
               &#9733; {avgRating}
             </p>
             <hr></hr>
-            <p className="text-gray-400 font-semibold">{totalRatingsString}</p>
+            <p class="text-gray-400 font-semibold">{totalRatingsString}</p>
           </div>
         </div>
       </div>
