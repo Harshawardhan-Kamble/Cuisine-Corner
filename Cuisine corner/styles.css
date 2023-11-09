@@ -309,7 +309,7 @@ hr {
 .item-add-btn {
   position: absolute;
   bottom: 9px;
-  left: 46px;
+  right: 45px;
   width: 4rem;
   color: rgb(34 197 94);
   padding: 0 1rem;
