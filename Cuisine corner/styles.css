@@ -320,3 +320,12 @@ hr {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
   cursor: pointer;
 }
+/* Empty Cart */
+.empty-cart h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.empty-cart-img{
+  width: 50%;
+  margin-left: 25%;
+}
