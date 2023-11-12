@@ -340,10 +340,11 @@ hr {
 
 .clear-cart-btn {
   display: block;
-  margin: 20px auto;
+  margin-top: 20px;
+  margin-left:33% ;
   padding: 10px 20px;
   font-weight: bold;
-  background-color: #ccc;
+  background-color: lightcoral;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -352,13 +353,34 @@ hr {
   display: flex;
   /* gap: 10px; */
   justify-content: center;
+  gap: 140px;
+  margin-top: 133px;
 }
 
 .cart-items{
   /* margin-left:100px; */
+  width: 45%;
 }
 .cart-checkout{
   width: 100%;
   height: 46px;
   cursor: pointer;
+  background-color: #e67e22;
+  border-radius: 5px;
+  font-size: medium;
+}
+.cart-checkout:hover{
+  color:white;
+  background-color: green;
+}
+.total-cart-price{
+  /* background-color:wheat; */
+  padding: 25px;
+  margin-top: 84px;
+  border-radius: 13px;
+  height: 277px;
+  box-shadow: 4px 5px 10px 5px #ccc;
+}
+.total-cart-price h2{
+  margin-bottom: 100px;
 }

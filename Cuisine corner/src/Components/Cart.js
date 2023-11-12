@@ -11,7 +11,7 @@ const Cart = () => {
   };
   const calculateCartTotal = () => {
     return cartItems.reduce(
-      (total, item) => total + Math.round(item.card.info.price / 100),
+      (total, item) => total + Math.round(item.card.info.price / 100 || item.card.info.defaultPrice/100 ),
       0
     );
   };
@@ -29,22 +29,24 @@ const Cart = () => {
         </div>
       ) : (
         <>
-          <div className="text-center my-4">
-            <button onClick={handleClearCart} className="clear-cart-btn">
-              Clear Cart
-            </button>
-          </div>
+          
           <div className="cart-container">
             <div className="cart-items">
-            <p>Cart Page</p>
+            <p>Order Basket</p>
               <ItemList items={cartItems} />
             </div>
             <div className="total-cart-price">
+              <h2>Basket Summary</h2>
               <p>Sub-Total: ₹{calculateCartTotal()}</p>
               <p>Delivery Charges: ₹100</p>
               <p>Grand-Total: ₹{calculateCartTotal() +100}</p>
               <button className="cart-checkout">Checkout</button>
             </div>
+          </div>
+          <div className="text-center my-4">
+            <button onClick={handleClearCart} className="clear-cart-btn">
+              Clear Cart
+            </button>
           </div>
         </>
       )}
