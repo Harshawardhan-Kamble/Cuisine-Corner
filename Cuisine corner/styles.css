@@ -377,10 +377,18 @@ hr {
   /* background-color:wheat; */
   padding: 25px;
   margin-top: 84px;
-  border-radius: 13px;
+  border-radius: 6px;
   height: 277px;
   box-shadow: 4px 5px 10px 5px #ccc;
+  line-height: 2;
 }
 .total-cart-price h2{
-  margin-bottom: 100px;
+  margin-bottom: 23px;
+}
+th{
+  text-align: left;
+}
+table{
+  padding: 2px;
+  background-color:wheat ;
 }
