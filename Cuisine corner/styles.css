@@ -329,5 +329,36 @@ hr {
   width: 50%;
   margin-left: 25%;
 }
+.cart-items>p{
+    font-size: 2rem;
+    margin-bottom: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 10px;
+    
+}
 
+.clear-cart-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart-container{
+  display: flex;
+  /* gap: 10px; */
+  justify-content: center;
+}
 
+.cart-items{
+  /* margin-left:100px; */
+}
+.cart-checkout{
+  width: 100%;
+  height: 46px;
+  cursor: pointer;
+}
