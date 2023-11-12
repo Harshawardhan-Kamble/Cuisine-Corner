@@ -367,7 +367,8 @@ hr {
   cursor: pointer;
   background-color: #e67e22;
   border-radius: 5px;
-  font-size: medium;
+  font-size: large;
+  margin-top: 10px;
 }
 .cart-checkout:hover{
   color:white;
@@ -378,7 +379,7 @@ hr {
   padding: 25px;
   margin-top: 84px;
   border-radius: 6px;
-  height: 277px;
+  height: 285px;
   box-shadow: 4px 5px 10px 5px #ccc;
   line-height: 2;
 }
@@ -390,5 +391,6 @@ th{
 }
 table{
   padding: 2px;
-  background-color:wheat ;
+  /* background-color:wheat ; */
+  width: 205px;
 }
