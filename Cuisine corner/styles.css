@@ -199,7 +199,6 @@ button > span {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .res-menu-section {
   display: flex;
@@ -321,27 +320,26 @@ hr {
   cursor: pointer;
 }
 /* Empty Cart */
-.empty-cart h1{
+.empty-cart h1 {
   text-align: center;
   margin-bottom: 20px;
 }
-.empty-cart-img{
+.empty-cart-img {
   width: 50%;
   margin-left: 25%;
 }
-.cart-items>p{
-    font-size: 2rem;
-    margin-bottom: 14px;
-    font-weight: 700;
-    color: #333;
-    margin-left: 10px;
-    
+.cart-items > p {
+  font-size: 2rem;
+  margin-bottom: 14px;
+  font-weight: 700;
+  color: #333;
+  margin-left: 10px;
 }
 
 .clear-cart-btn {
   display: block;
   margin-top: 20px;
-  margin-left:33% ;
+  margin-left: 33%;
   padding: 10px 20px;
   font-weight: bold;
   background-color: lightcoral;
@@ -349,7 +347,7 @@ hr {
   border-radius: 5px;
   cursor: pointer;
 }
-.cart-container{
+.cart-container {
   display: flex;
   /* gap: 10px; */
   justify-content: center;
@@ -357,23 +355,24 @@ hr {
   margin-top: 133px;
 }
 
-.cart-items{
+.cart-items {
   /* margin-left:100px; */
   width: 45%;
 }
-.cart-checkout{
+.cart-checkout {
   width: 100%;
   height: 46px;
   cursor: pointer;
   background-color: #e67e22;
   border-radius: 5px;
   font-size: large;
-  margin-top: 10px;}
-.cart-checkout:hover{
-  color:white;
+  margin-top: 10px;
+}
+.cart-checkout:hover {
+  color: white;
   background-color: green;
 }
-.total-cart-price{
+.total-cart-price {
   /* background-color:wheat; */
   padding: 25px;
   margin-top: 84px;
@@ -382,57 +381,46 @@ hr {
   box-shadow: 4px 5px 10px 5px #ccc;
   line-height: 2;
 }
-.total-cart-price h2{
+.total-cart-price h2 {
   margin-bottom: 23px;
 }
-th{
+th {
   text-align: left;
 }
-table{
+table {
   padding: 2px;
-<<<<<<< HEAD
-  width: 205px;
-=======
+
   /* background-color:wheat ; */
   width: 210px;
->>>>>>> c8f7e785537e14ede24e0ca84c588c9e640f6774
 }
-.about-us{
-display: flex;
-/* margin: 100px; */
-/* line-height: 1; */
-margin:0 50px;
-gap: 70px;
-margin-bottom: 10pc;
+.about-us {
+  display: flex;
+  /* margin: 100px; */
+  /* line-height: 1; */
+  margin: 0 50px;
+  gap: 70px;
+  margin-bottom: 10pc;
 }
-.about-us-content{
+.about-us-content {
   width: 52%;
-  
 }
-.about-us h1{
+.about-us h1 {
   margin-bottom: 20px;
 }
-.about-us-image{
+.about-us-image {
   border-radius: 36px;
   margin-top: 60px;
   width: 600px;
   height: 288px;
 }
-.about-us p{
+.about-us p {
   line-height: 1.5;
   font-size: 22px;
 }
 
-
-
-
-
-
-
 /* Footer */
-.footer{
+.footer {
   margin-top: 10px;
   text-align: center;
   font-size: large;
 }
-
