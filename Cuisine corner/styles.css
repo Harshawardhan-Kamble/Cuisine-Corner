@@ -367,9 +367,8 @@ hr {
   cursor: pointer;
   background-color: #e67e22;
   border-radius: 5px;
-  font-size: medium;
-  margin-top: 12px;
-}
+  font-size: large;
+  margin-top: 10px;}
 .cart-checkout:hover{
   color:white;
   background-color: green;
@@ -379,7 +378,7 @@ hr {
   padding: 25px;
   margin-top: 84px;
   border-radius: 6px;
-  height: 277px;
+  height: 285px;
   box-shadow: 4px 5px 10px 5px #ccc;
   line-height: 2;
 }
@@ -394,8 +393,42 @@ table{
   /* background-color:wheat ; */
   width: 210px;
 }
+.about-us{
+display: flex;
+/* margin: 100px; */
+/* line-height: 1; */
+margin:0 50px;
+gap: 70px;
+margin-bottom: 10pc;
+}
+.about-us-content{
+  width: 52%;
+  
+}
+.about-us h1{
+  margin-bottom: 20px;
+}
+.about-us-image{
+  border-radius: 36px;
+  margin-top: 60px;
+  width: 600px;
+  height: 288px;
+}
+.about-us p{
+  line-height: 1.5;
+  font-size: 22px;
+}
+
+
+
+
+
+
+
 /* Footer */
 .footer{
   margin-top: 10px;
   text-align: center;
+  font-size: large;
 }
+

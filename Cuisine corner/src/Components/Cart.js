@@ -11,7 +11,11 @@ const Cart = () => {
   };
   const calculateCartTotal = () => {
     return cartItems.reduce(
-      (total, item) => total + Math.round(item.card.info.price / 100 || item.card.info.defaultPrice / 100),
+      (total, item) =>
+        total +
+        Math.round(
+          item.card.info.price / 100 || item.card.info.defaultPrice / 100
+        ),
       0
     );
   };
@@ -29,7 +33,6 @@ const Cart = () => {
         </div>
       ) : (
         <>
-
           <div className="cart-container">
             <div className="cart-items">
               <p>Order Basket</p>
@@ -43,7 +46,8 @@ const Cart = () => {
                   <td> ₹{calculateCartTotal()}</td>
                 </tr>
                 <tr>
-                  <td>Delivery Charges </td><td>₹100</td>
+                  <td>Delivery Charges </td>
+                  <td>₹100</td>
                 </tr>
                 <tr>
                   <th>Grand-Total </th>
@@ -51,7 +55,6 @@ const Cart = () => {
                 </tr>
               </table>
               <button className="cart-checkout">Checkout</button>
-
             </div>
           </div>
           <div className="text-center my-4">
