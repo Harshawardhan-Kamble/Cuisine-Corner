@@ -368,6 +368,7 @@ hr {
   background-color: #e67e22;
   border-radius: 5px;
   font-size: medium;
+  margin-top: 12px;
 }
 .cart-checkout:hover{
   color:white;
@@ -390,5 +391,11 @@ th{
 }
 table{
   padding: 2px;
-  background-color:wheat ;
+  /* background-color:wheat ; */
+  width: 210px;
+}
+/* Footer */
+.footer{
+  margin-top: 10px;
+  text-align: center;
 }
