@@ -6,7 +6,7 @@ const About = () => {
         <div className="about-us-content">
           <h1>About us</h1>
           <p>
-            Welcome to Cuisine Corner, the Premier Food Ordering app in Pune,
+            Welcome to Cuisine Corner, the Premier Food Ordering Platform in Pune,
             Maharashtra. We are dedicated to providing a seamless and convenient
             experience for food lovers to explore and order from a wide range of
             local restaurants.
