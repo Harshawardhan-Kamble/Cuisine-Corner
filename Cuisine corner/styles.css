@@ -368,8 +368,7 @@ hr {
   background-color: #e67e22;
   border-radius: 5px;
   font-size: large;
-  margin-top: 10px;
-}
+  margin-top: 10px;}
 .cart-checkout:hover{
   color:white;
   background-color: green;
@@ -391,5 +390,49 @@ th{
 }
 table{
   padding: 2px;
+<<<<<<< HEAD
   width: 205px;
+=======
+  /* background-color:wheat ; */
+  width: 210px;
+>>>>>>> c8f7e785537e14ede24e0ca84c588c9e640f6774
 }
+.about-us{
+display: flex;
+/* margin: 100px; */
+/* line-height: 1; */
+margin:0 50px;
+gap: 70px;
+margin-bottom: 10pc;
+}
+.about-us-content{
+  width: 52%;
+  
+}
+.about-us h1{
+  margin-bottom: 20px;
+}
+.about-us-image{
+  border-radius: 36px;
+  margin-top: 60px;
+  width: 600px;
+  height: 288px;
+}
+.about-us p{
+  line-height: 1.5;
+  font-size: 22px;
+}
+
+
+
+
+
+
+
+/* Footer */
+.footer{
+  margin-top: 10px;
+  text-align: center;
+  font-size: large;
+}
+
