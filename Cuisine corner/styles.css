@@ -417,6 +417,57 @@ table {
   line-height: 1.5;
   font-size: 22px;
 }
+.contact-us-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-container h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.contact-us-container input,
+textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-us-container button {
+  background-color: #e67e22;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us-container button:hover {
+  background-color:green;
+}
+.map-container {
+  margin-top: 20px;
+  height: 400px;
+  width: 100%;
+}
+
+
+
+
+
+
 
 /* Footer */
 .footer {
