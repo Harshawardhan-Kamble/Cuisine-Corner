@@ -59,7 +59,7 @@ const ContactUs = () => {
             />
             <Marker position={[18.4919553, 73.9345125]}>
               <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
+              Headquarters here <br /> Pune
               </Popup>
             </Marker>
           </MapContainer>
