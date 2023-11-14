@@ -399,7 +399,7 @@ table {
   /* line-height: 1; */
   margin: 0 50px;
   gap: 70px;
-  margin-bottom: 10pc;
+  margin-bottom: 20px;
 }
 .about-us-content {
   width: 52%;
@@ -416,6 +416,27 @@ table {
 .about-us p {
   line-height: 1.5;
   font-size: 22px;
+}
+.founder-section{
+  display: flex;
+  gap: 46px;
+}
+.founder-image{
+  width: 350px;
+    margin-left: 59px;
+    border-radius: 34px;
+    margin-top: 50px;
+}
+.founder-text{
+  margin-top:20px;
+  font-size: 22px;
+  line-height: 1.7;
+    margin-right: 60px;
+}
+.founder-words h2{
+  text-align: center;
+  margin-top: 40px;
+  margin-right: 60px;
 }
 .contactus-container{
   /* display: flex */
@@ -451,8 +472,8 @@ text-align: center;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: absolute;
-    top: 0;
-    left: 800px;
+  top: 0;
+  left: 800px;
   height: 335px;
 }
 
