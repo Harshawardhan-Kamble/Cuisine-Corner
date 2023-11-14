@@ -6,6 +6,7 @@
 body {
   margin-top: 100px;
   font-family: PT Sans, Calibri, sans-serif;
+  /* min-height: 100vh; */
 }
 /* Header section  */
 .header {
@@ -510,8 +511,33 @@ textarea {
 }
 
 /* Footer */
-.footer {
+/* .footer {
   margin-top: 10px;
   text-align: center;
   font-size: large;
+} */
+.app-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
 }
