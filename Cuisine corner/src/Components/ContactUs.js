@@ -1,6 +1,17 @@
 import React, { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import icon from "leaflet/dist/images/marker-icon.png";
+import iconShadow from "leaflet/dist/images/marker-shadow.png";
+
+let DefaultIcon = L.icon({
+  iconUrl: icon,
+  shadowUrl: iconShadow,
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
+
 const ContactUs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -27,14 +38,13 @@ const ContactUs = () => {
 
   return (
     <>
-    <div className="contactus-content">
-      <h1>Contact Us</h1>
-      <p>
-        Welcome to Cuisine Corner! We're here to assist you and value your
-        feedback. 
-        Whether you have questions,need support,or simply want to share
-        your thoughts we're here to help.
-      </p>
+      <div className="contactus-content">
+        <p>
+          We'd Love to Hear From You</p>
+          <p>
+           Whether you have questions,need support,or simply want to
+          share your thoughts we're here to help.
+        </p>
       </div>
       <div className="contactus-container">
         <div>
