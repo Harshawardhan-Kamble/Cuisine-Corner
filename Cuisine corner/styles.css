@@ -420,12 +420,20 @@ table {
 .contactus-container{
   /* display: flex */
   margin: 0 70px;
-    margin-top: 182px;
+    margin-top: 100px;
     position: relative;
 }
 .leaflet-container {
   width: 50%;
   height: 500px;
+}
+.contactus-content{
+  margin: 50px;
+}
+.contactus-content p{
+  font-size: 22px;
+  margin-top: 20px;
+  line-height: 1.5;
 }
 .contact-us-form {
   width: 30%;
