@@ -39,7 +39,9 @@ const About = () => {
             diverse tapestry of global cuisines. Our mission is rooted in
             redefining the dining experience – making it not just a matter of
             convenience but a journey filled with excitement, innovation, and a
-            celebration of flavors. Through our commitment to culinary
+            celebration of flavors.
+            </p>
+            <p className="founder-text"> Through our commitment to culinary
             diversity, seamless experiences, and empowering local businesses, we
             aspire to make every meal an exploration and every bite a moment of
             pure delight. Cuisine Corner isn't just about ordering food; it's

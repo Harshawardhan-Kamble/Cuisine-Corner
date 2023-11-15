@@ -372,6 +372,7 @@ hr {
 .cart-checkout:hover {
   color: white;
   background-color: green;
+  border-color: white;
 }
 .total-cart-price {
   /* background-color:wheat; */
@@ -475,7 +476,7 @@ text-align: center;
   position: absolute;
   top: 0;
   left: 800px;
-  height: 335px;
+  /* height: 335px; */
 }
 
 .contact-us-form h2 {
@@ -523,7 +524,12 @@ textarea {
   text-align: center;
   margin-top: 100px;
 }
-
+.footer-name a:link ,.footer-name a:visited{
+  color: white;
+}
+.footer-name a:hover{
+  color:#e67e22
+}
 .footer-content {
   max-width: 800px;
   margin: 0 auto;
