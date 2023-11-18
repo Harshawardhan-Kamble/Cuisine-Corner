@@ -35,12 +35,12 @@ const Header = () => {
           <Link to="/cart">
             Cart- {cartItems.length}
           </Link></li>
-          <li>
+          {/* <li>
             <button className="log-btn" onClick={toggleLog}>
               {log}
               <span>{onlineStatus ? "🟢" : "🔴"}</span>
             </button>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

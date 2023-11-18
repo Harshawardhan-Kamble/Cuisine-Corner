@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="app-footer">
       <div className="footer-content">
-        <p className='footer-name' >Made by ❤️ <a href='https://in.linkedin.com/in/harshawardhan-kamble'>Harshawardhan</a> </p><span> &copy; Cuisine Corner {new Date().getFullYear()}  </span>
+        <p className='footer-name' >Made by ❤️ <a target="_blank" href='https://in.linkedin.com/in/harshawardhan-kamble'>Harshawardhan</a> </p><span> &copy; Cuisine Corner {new Date().getFullYear()}  </span>
         <div className="social-links">
           <a href="https://github.com/Harshawardhan-Kamble" target="_blank" rel="noopener noreferrer">Github</a>
           <a href="https://in.linkedin.com/in/harshawardhan-kamble" target="_blank" rel="noopener noreferrer">Linkedin</a>

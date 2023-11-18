@@ -32,6 +32,9 @@ a:link {
 a:visited {
   color: #242424;
 }
+.nav-items ul{
+  margin-right: 20px;
+}
 .nav-items ul li {
   display: inline-block;
   margin-left: 30px;
@@ -324,6 +327,12 @@ hr {
 .empty-cart h1 {
   text-align: center;
   margin-bottom: 20px;
+}
+.empty-cart h1 span a{
+  color:#e67e22
+}
+.empty-cart h1 span a:hover{
+  transform:translateX(30px)
 }
 .empty-cart-img {
   width: 50%;
