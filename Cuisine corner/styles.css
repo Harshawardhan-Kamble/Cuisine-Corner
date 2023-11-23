@@ -297,6 +297,10 @@ hr {
   color: #888;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  max-height: 2.4rem;
 }
 .item-img {
   width: 25%;
@@ -556,3 +560,4 @@ textarea {
 .social-links a:hover {
   text-decoration: underline;
 }
+
