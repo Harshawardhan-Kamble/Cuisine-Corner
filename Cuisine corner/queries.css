@@ -6,9 +6,7 @@
     .menu-category{
         width: 60%;
     }
-    .item-img{
-        /* width: 30%; */
-    }
+    
     .item-add-btn{
         right: 25px;
     }
@@ -48,11 +46,31 @@
     }
 }
 @media only screen and (max-width: 580px){
+    /* nav */
     .res-container,
     .shimmer-Container {
       grid-template-columns: repeat(1, 260px);
     }
+    .search-input{
+        width: 290px;
+    }
     .item-img {
         width: 32%;
+    }
+    .item-add-btn {
+        width: 3.5rem;
+        /* right: 26px; */
+        padding: 0;
+      }
+}
+@media only screen and (max-width: 500px){
+    .item-img {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 380px){
+    .search-input{
+        width: 249px;
+  margin-right: -1px;
     }
 }

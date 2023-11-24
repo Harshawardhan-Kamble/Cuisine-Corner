@@ -25,13 +25,13 @@ const RestaurantList = () => {
       "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
-    console.log(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants)
-    setResList(
-      json.data.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
-    setFilterList(
-      json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
-    );
+    let list =
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+    if (list === undefined) {
+      list=json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+    }
+    setResList(list)
+    setFilterList(list);
   };
   useEffect(() => {
     fetchData();
@@ -42,6 +42,7 @@ const RestaurantList = () => {
       : resList;
     setFilterList(filteredRating);
   }, [showTopRated, resList]);
+  console.log(resList)
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false) return <h1>Internet Disconnected</h1>;
   return resList.length === 0 ? (
