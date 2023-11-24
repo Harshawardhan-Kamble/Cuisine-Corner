@@ -454,14 +454,20 @@ table {
   margin-right: 60px;
 }
 .contactus-container{
-  /* display: flex */
-  margin: 0 70px;
+  display: flex
+  /* margin: 0 70px;
     margin-top: 35px;
-    position: relative;
+    position: relative; */
+}
+.map-head-container{
+  /* margin-left: 67px; */
 }
 .leaflet-container {
-  width: 50%;
-  height: 400px;
+  /* width: 50%; */
+  height: 350px;
+  position: relative;
+    width: 628px;
+    margin-left: 50px;
 }
 .contactus-content{
   margin: 50px;
@@ -481,14 +487,14 @@ text-align: center;
 }
 .contact-us-form {
   width: 30%;
-  margin: 20px auto;
+  margin-left: 130px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 800px;
+  left: 800px; */
   /* height: 335px; */
 }
 

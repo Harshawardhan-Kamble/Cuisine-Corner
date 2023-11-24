@@ -47,7 +47,7 @@ const ContactUs = () => {
         </p>
       </div>
       <div className="contactus-container">
-        <div>
+        <div >
           <MapContainer
             center={[18.4919553, 73.9345125]}
             zoom={13}
