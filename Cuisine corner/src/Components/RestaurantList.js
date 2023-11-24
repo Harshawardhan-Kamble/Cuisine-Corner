@@ -42,7 +42,7 @@ const RestaurantList = () => {
       : resList;
     setFilterList(filteredRating);
   }, [showTopRated, resList]);
-  console.log(resList)
+
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false) return <h1>Internet Disconnected</h1>;
   return resList.length === 0 ? (

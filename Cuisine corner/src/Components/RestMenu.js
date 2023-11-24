@@ -19,6 +19,8 @@ const RestMenu = () => {
     sla,
     totalRatingsString,
   } = resInfo?.cards[0]?.card?.card?.info;
+
+  console.log(resInfo)
   // console.log(
   //   resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
   // );
@@ -27,8 +29,11 @@ const RestMenu = () => {
   // const { itemCard2 } =
   //   resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
   //     .itemCards;
+  const categoryForDesktop=resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+  const categoryForMobile=resInfo?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+
   const categories =
-    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+    (categoryForDesktop||categoryForMobile)?.filter(
       (category) =>
         category?.card?.card?.["@type"] ===
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
