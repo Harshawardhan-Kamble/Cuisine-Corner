@@ -17,10 +17,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 1110;
   background-color: #fff;
 }
-/* Mobile navigation */
+
 
 
 .logo {
@@ -85,8 +85,12 @@ button > span {
   position: absolute;
   top: -9px;
 }
+/* Mobile navigation */
 .hamburger-menu {
   display: none;
+}
+.hamburger-menu a:focus{
+  color: #e67e22;
 }
 
 /* Filter Search and Rating */
