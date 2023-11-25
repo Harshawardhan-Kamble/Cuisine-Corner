@@ -79,6 +79,17 @@
         width: 200px;
         height: auto;
     }
+    .footer-content{
+        justify-content: center;
+gap: 10%;
+    }
+    .footer-content p{
+        font-size: 15px;
+    }
+    .social-links{
+        display: none;
+    }
+    
 }
 @media only screen and (max-width: 790px){
     .menu-category{
