@@ -20,6 +20,9 @@ body {
   z-index: 999;
   background-color: #fff;
 }
+/* Mobile navigation */
+
+
 .logo {
   width: 135px;
   height: auto;
@@ -80,8 +83,12 @@ button > span {
   margin-left: 1px;
   font-size: 10px;
   position: absolute;
-  top: 12px;
+  top: -9px;
 }
+.hamburger-menu {
+  display: none;
+}
+
 /* Filter Search and Rating */
 .filter {
   display: flex;
@@ -565,4 +572,5 @@ textarea {
 .social-links a:hover {
   text-decoration: underline;
 }
+
 

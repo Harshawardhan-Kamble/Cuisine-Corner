@@ -3,11 +3,13 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useSelector } from "react-redux";
+import { GiHamburgerMenu } from "react-icons/gi";
 const Header = () => {
-  const [log, setLog] = useState("Login");
-  const toggleLog = () => {
-    setLog(log === "Login" ? "Logout" : "Login");
-  };
+  const [showMediaIcons, setShowMediaIcons] = useState(false);
+  // const [log, setLog] = useState("Login");
+  // const toggleLog = () => {
+  //   setLog(log === "Login" ? "Logout" : "Login");
+  // };
   const onlineStatus = useOnlineStatus();
   // Subscribing to store
   const cartItems = useSelector((store) => store.cart.items);
@@ -19,9 +21,11 @@ const Header = () => {
           <img className="logo" src={logo} />
         </Link>
       </div>
-      <div className="nav-items">
+      <div className={
+            showMediaIcons ? "nav-items mobile-nav-link" : "nav-items"
+          }>
         <ul>
-        
+
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -35,14 +39,19 @@ const Header = () => {
           <Link to="/cart">
             Cart- {cartItems.length}
           </Link></li>
-          {/* <li>
-            <button className="log-btn" onClick={toggleLog}>
-              {log}
-              <span>{onlineStatus ? "🟢" : "🔴"}</span>
-            </button>
-          </li> */}
+          <li>
+             {/* <button className="log-btn" > */}
+              {/* {log}  */}
+              {/* <span>{onlineStatus ? "🟢" : "🔴"}</span> */}
+            {/* </button> */}
+          </li>
         </ul>
       </div>
+          <div className="hamburger-menu">
+            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+              <GiHamburgerMenu />
+            </a>
+          </div>
     </div>
   );
 };
