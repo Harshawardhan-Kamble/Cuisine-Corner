@@ -41,12 +41,7 @@ const About = () => {
             convenience but a journey filled with excitement, innovation, and a
             celebration of flavors.
             </p>
-            <p className="founder-text"> Through our commitment to culinary
-            diversity, seamless experiences, and empowering local businesses, we
-            aspire to make every meal an exploration and every bite a moment of
-            pure delight. Cuisine Corner isn't just about ordering food; it's
-            about creating culinary connections that leave lasting impressions.
-          </p>
+            
         </div>
       </div>
     </>
