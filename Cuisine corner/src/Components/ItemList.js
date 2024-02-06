@@ -1,11 +1,15 @@
 import { useDispatch } from "react-redux";
 import { CDN_IMAGE } from "../utils/constant";
 import { addItem } from "../utils/redux/cartSlice";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const ItemList = ({ items }) => {
   // console.log(items);
   const dispatch = useDispatch();
   const handleAddItem = (item) => {
     dispatch(addItem(item));
+    toast.success(`${item?.card?.info?.name} Added to Cart`);
   };
   return (
     <div>
@@ -37,10 +41,12 @@ const ItemList = ({ items }) => {
               Add
             </button>
           </div>
+            
 
           {/* <div className="w-3/12 p-4"><img src={CDN_IMAGE+item?.card?.info?.imageId} className="w-full"/></div> */}
         </div>
       ))}
+      <ToastContainer position="bottom-center" />
     </div>
   );
 };
