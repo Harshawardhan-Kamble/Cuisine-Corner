@@ -11,6 +11,8 @@ import RestMenu from "./Components/RestMenu";
 import { Provider } from "react-redux";
 import appStore from "./utils/redux/appStore";
 import Cart from "./Components/Cart";
+import Success from "./Components/Success";
+import Cancel from "./Components/Cancel";
 const App = () => {
   return (
     <Provider store={appStore}>
@@ -45,6 +47,13 @@ const appRouter = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/success",
+        element: <Success />,
+      },{
+        path: "/cancel",
+        element: <Cancel />,
       },
     ],
   },

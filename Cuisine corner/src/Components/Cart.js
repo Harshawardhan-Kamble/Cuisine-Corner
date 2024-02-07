@@ -3,8 +3,10 @@ import { clearCart } from "../utils/redux/cartSlice";
 import ItemList from "./ItemList";
 import emptycart from "../../assets/emptycart.jpg";
 import { Link } from "react-router-dom";
+import { loadStripe } from "@stripe/stripe-js";
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems)
   const dispatch = useDispatch();
   const handleClearCart = () => {
     dispatch(clearCart());
@@ -14,11 +16,40 @@ const Cart = () => {
       (total, item) =>
         total +
         Math.round(
-          item.card.info.price / 100 || item.card.info.defaultPrice / 100
+          item?.card?.info?.price / 100 || item?.card?.info?.defaultPrice / 100
         ),
       0
     );
   };
+  // Payment integration
+  const makePayment = async()=>{
+    const stripe = await loadStripe("pk_test_51Oh9sxSC9nAZizam4zKHE2j32hyVEy8Rg3AzI5kcWjvc16oAwCCsGEDnTBYCcSysMZMzGp2bcQDa5EACQJ1MhcpM00ZHx8iPxk");
+
+    const body = {
+        products:cartItems
+    }
+    const headers = {
+        "Content-Type":"application/json"
+    }
+    const response = await fetch("http://localhost:3000/create-checkout-session",{
+        method:"POST",
+        headers:headers,
+        body:JSON.stringify(body)
+    });
+
+    const session = await response.json();
+
+    const result = stripe.redirectToCheckout({
+        sessionId:session.id
+    });
+    
+    if(result.error){
+        console.log(result.error);
+    }
+}
+
+  
+
   return (
     <>
       {cartItems.length === 0 ? (
@@ -54,7 +85,9 @@ const Cart = () => {
                   <th>₹{calculateCartTotal() + 100}</th>
                 </tr>
               </table>
-              <button className="cart-checkout">Checkout</button>
+              <button onClick={makePayment} className="cart-checkout">
+                Checkout
+              </button>
             </div>
           </div>
           <div className="text-center my-4">
