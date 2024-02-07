@@ -576,5 +576,10 @@ textarea {
 .social-links a:hover {
   text-decoration: underline;
 }
+.payment-success{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
