@@ -482,7 +482,7 @@ table {
 .contactus-content{
   margin: 50px;
 }
-.contactus-content p{
+.contactus-content p {
   font-size: 65px;
   margin-top: 20px;
   line-height: 1.5;
@@ -576,10 +576,82 @@ textarea {
 .social-links a:hover {
   text-decoration: underline;
 }
+/* Payment Success */
 .payment-success{
   display:flex;
   justify-content: center;
   align-items: center;
 }
+/* Payemnt canceled */
 
+.payment-failure{display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.payment-failure-container {
+ 
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+}
+
+
+.payment-failure-message {
+  color: #e44d26; /* Reddish color */
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.payment-failure-message p {
+  font-size: 65px;
+  margin-top: 20px;
+  line-height: 1.5;
+text-align: center;
+}
+.payment-failure-message p:last-child{
+  color:dimgrey; 
+  font-size:40px
+}
+.payment-failure-contact > a:nth-child(1) > button:nth-child(1) {
+  background-color: #e67e22;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+    border-radius: 30px;
+  margin-top: 58px;
+  cursor: pointer;
+  font-family: PT Sans, Calibri, sans-serif;
+  }
+/* .payment-failure-suggestions {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.payment-failure-suggestions ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.payment-failure-suggestions li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.payment-failure-suggestions li::before {
+  color: #e44d26;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+} */
+
+.payment-failure-contact {
+  color: #333;
+}
 
