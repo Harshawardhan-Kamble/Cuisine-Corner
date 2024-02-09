@@ -9,6 +9,7 @@ const RestMenu = () => {
   // Used useRestaurantMenu custom hook
   const resInfo = useRestaurantMenu(id);
   if (resInfo === null) return <Shimmer />;
+  console.log(resInfo)
   const {
     name,
     areaName,
