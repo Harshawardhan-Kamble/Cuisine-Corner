@@ -9,7 +9,7 @@ const RestMenu = () => {
   // Used useRestaurantMenu custom hook
   const resInfo = useRestaurantMenu(id);
   if (resInfo === null) return <Shimmer />;
-  console.log(resInfo)
+  // console.log(resInfo)
   const {
     name,
     areaName,
@@ -19,9 +19,9 @@ const RestMenu = () => {
     feeDetails,
     sla,
     totalRatingsString,
-  } = resInfo?.cards[0]?.card?.card?.info;
+  } = resInfo?.cards[2]?.card?.card?.info;
 
-  console.log(resInfo)
+  // console.log(resInfo)
   // console.log(
   //   resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
   // );
@@ -30,7 +30,7 @@ const RestMenu = () => {
   // const { itemCard2 } =
   //   resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
   //     .itemCards;
-  const categoryForDesktop=resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+  const categoryForDesktop=resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
   const categoryForMobile=resInfo?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
 
   const categories =
@@ -39,6 +39,7 @@ const RestMenu = () => {
         category?.card?.card?.["@type"] ===
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
+    console.log(categories)
   return (
     <>
       <div className=" res-menu-container ">

@@ -6,7 +6,7 @@ const useRestaurantMenu = (id) => {
     fetchMenu();
   }, []);
   const fetchMenu = async () => {
-    const data = await fetch(MENU_API + id);
+    const data = await fetch("http://localhost:3000/menu/api/" + id);
     const jsonData = await data.json();
     setResInfo(jsonData.data);
   };

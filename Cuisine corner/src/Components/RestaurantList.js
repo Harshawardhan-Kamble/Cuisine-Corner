@@ -19,10 +19,9 @@ const RestaurantList = () => {
     );
     setFilterList(filteredText);
   };
-  console.log(resList)
+  // console.log(resList)
   const fetchData = async () => {
-    const data = await fetch(
-      "https://corsproxy.org/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Frestaurants%2Flist%2Fv5%3Flat%3D18.5204303%26lng%3D73.8567437%26page_type%3DDESKTOP_WEB_LISTING"
+    const data = await fetch("http://localhost:3000/list/api"
     );
     const json = await data.json();
   
