@@ -1,5 +1,8 @@
 node_modules
 dist
+.env
+.env.development
+.env.production
 .parcel-cache
 .firebase
 firebase.json

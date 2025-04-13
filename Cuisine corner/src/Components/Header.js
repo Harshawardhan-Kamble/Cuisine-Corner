@@ -13,7 +13,7 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
   // Subscribing to store
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  // console.log(cartItems);
   return (
     <div className="header ">
       <div className="logo-container">

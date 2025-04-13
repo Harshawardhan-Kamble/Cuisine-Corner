@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { loadStripe } from "@stripe/stripe-js";
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems)
+  // console.log(cartItems)
   const dispatch = useDispatch();
   const handleClearCart = () => {
     dispatch(clearCart());

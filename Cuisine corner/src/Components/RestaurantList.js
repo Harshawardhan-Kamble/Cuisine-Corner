@@ -5,6 +5,10 @@ import Shimmer from "./Shimmer";
 import Filter from "./Filter";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+
+
+const baseUrl =process.env.REACT_APP_API_URL 
+console.log(baseUrl)
 const RestaurantList = () => {
   const [resList, setResList] = useState([]);
   const [filterList, setFilterList] = useState([]);
@@ -21,7 +25,7 @@ const RestaurantList = () => {
   };
   // console.log(resList)
   const fetchData = async () => {
-    const data = await fetch("http://localhost:3000/list/api"
+    const data = await fetch(`http://${baseUrl}/list/api`
     );
     const json = await data.json();
   
