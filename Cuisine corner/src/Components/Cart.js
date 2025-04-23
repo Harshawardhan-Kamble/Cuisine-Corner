@@ -59,7 +59,7 @@ const Cart = () => {
                   <th>₹{calculateCartTotal() + 100}</th>
                 </tr>
               </table>
-              <button onClick={makePayment} className="cart-checkout">
+              <button  className="cart-checkout">
                 Checkout
               </button>
             </div>
